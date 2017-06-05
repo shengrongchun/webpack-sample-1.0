@@ -1,0 +1,1 @@
+window.tempObj = "Hi temp";

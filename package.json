@@ -1,0 +1,26 @@
+{
+  "name": "webpack-sample-project",
+  "version": "1.0.0",
+  "description": "webpack learning",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.2",
+    "gulp": "^3.9.1",
+    "style-loader": "^0.18.1",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "这是注释，下面的serve": "--hot --colors",
+    "serve": "webpack-dev-server --progress" 
+  },
+  "keywords": [
+    "webpack",
+    "practice"
+  ],
+  "author": "shengrongchun",
+  "license": "ISC"
+}
