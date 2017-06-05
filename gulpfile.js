@@ -9,12 +9,12 @@ var WebpackDevServer = require('webpack-dev-server');
 gulp.task('serve',function() {
     // body...
     
-    config.entry.unshift('webpack-dev-server/client?http://localhost:8888/','webpack/hot/dev-server');//这里是自动刷新的地址
+    config.entry.bundle.unshift('webpack-dev-server/client?http://localhost:8888/','webpack/hot/dev-server');//这里是自动刷新的地址
     //
     var compiler = webpack(config);
     //
     var server = new WebpackDevServer(compiler,{
-        contentBase:'public/',//切勿写成/public
+        contentBase:'dist/',//切勿写成/public
         publicPath: '',
         hot: true,//热替换,还有在plugins中加入new webpack.HotModuleReplacementPlugin()
         stats: {

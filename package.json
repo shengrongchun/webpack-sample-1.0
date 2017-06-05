@@ -5,8 +5,10 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.2",
     "gulp": "^3.9.1",
+    "html-webpack-plugin": "^2.28.0",
     "style-loader": "^0.18.1",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.16.5"
@@ -15,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "这是注释，下面的serve": "--hot --colors",
-    "serve": "webpack-dev-server --progress" 
+    "serve": "webpack-dev-server --progress"
   },
   "keywords": [
     "webpack",
